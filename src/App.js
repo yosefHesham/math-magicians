@@ -3,13 +3,18 @@ import Calculator from './components/calculator';
 
 import './App.css';
 
-function App() {
-  return (
-    <main>
-      <Calculator />
-    </main>
 
-  );
+class App extends React.Component {
+
+  render() {
+    return  (
+      <main>
+        <Calculator />
+      </main>
+  
+    );
+  }
 }
+
 
 export default App;
