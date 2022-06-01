@@ -25,12 +25,17 @@ main {
 }
 .field {
   background-color: lightgrey;
-  border: black solid 1px;
+  border: gray solid 1px;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 p {
   margin:  0;
+}
+
+.orange {
+  background-color: orange !important;
 }
