@@ -6,9 +6,9 @@ import './App.css';
 function App() {
   return (
     <main>
-      <Calculator/>
+      <Calculator />
     </main>
-   
+
   );
 }
 

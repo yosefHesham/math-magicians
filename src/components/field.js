@@ -1,28 +1,31 @@
-import React from 'react'
+/* eslint-disable react/prop-types */ // TODO: upgrade to latest eslint tooling
+
+import React from 'react';
 
 const arithmeticSigns = [
-  "+",
-  "-",
-  "÷",
-  "=",
-  "x"
-]
+  '+',
+  '-',
+  '÷',
+  '=',
+  'x',
+];
 
 class Field extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
+    this.state = {};
   }
 
   render() {
-    const fieldClassNames = 
-      `field ${arithmeticSigns.includes(this.props.sign) ? "orange" :" "} `
-    
+    const { sign } = this.props;
+    const fieldClassNames = `field ${arithmeticSigns.includes(sign) ? 'orange' : ' '} `;
+
     return (
-      <div className={fieldClassNames} id = {"field" + this.props.sign}>
-          {this.props.sign}
-        </div>
+      <div className={fieldClassNames} id={`field${sign}`}>
+        {sign}
+      </div>
     );
   }
 }
 
-export default Field
+export default Field;

@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */ // TODO: upgrade to latest eslint tooling
+
 import React from 'react';
 import Field from './field';
 import ResultField from './result_field';
@@ -32,16 +34,16 @@ class Calculator extends React.Component {
   }
 
   render() {
+    const { result } = this.state;
     return (
       <div className="calculator">
 
-        <ResultField result={this.state.result}/>
-        {calc.map(sign => <Field key={sign} sign ={sign}/>)}
+        <ResultField result={result} />
+        {calc.map((sign) => <Field key={sign} sign={sign} />)}
 
       </div>
     );
   }
 }
-
 
 export default Calculator;
