@@ -2,6 +2,7 @@
 /* eslint-disable react/prop-types */ // TODO: upgrade to latest eslint tooling
 
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const arithmeticSigns = [
   '+',
@@ -28,5 +29,14 @@ class Field extends React.Component {
     );
   }
 }
+
+Field.propTypes = {
+  sign: PropTypes.string,
+  handleClick: PropTypes.func,
+};
+Field.defaultProps = {
+  sign: '',
+  handleClick: () => {},
+};
 
 export default Field;
