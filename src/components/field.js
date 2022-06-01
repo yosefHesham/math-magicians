@@ -1,5 +1,12 @@
 import React from 'react'
 
+const arithmeticSigns = [
+  "+",
+  "-",
+  "÷",
+  "=",
+  "x"
+]
 
 class Field extends React.Component {
   constructor(props) {
@@ -7,8 +14,11 @@ class Field extends React.Component {
   }
 
   render() {
+    const fieldClassNames = 
+      `field ${arithmeticSigns.includes(this.props.sign) ? "orange" :" "} `
+    
     return (
-      <div className='field' id={this.props.sign}>
+      <div className={fieldClassNames} id = {"field" + this.props.sign}>
           {this.props.sign}
         </div>
     );
