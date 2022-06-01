@@ -4,7 +4,6 @@
   grid-column: 1 /  -1;
 }
 
-
 main {
   width: 100%;
   height: 100vh;
@@ -17,12 +16,13 @@ main {
   height: 50%;
   width: 50%;
   display: grid;
-  grid-template-columns:repeat(4,auto);
+  grid-template-columns: repeat(4, auto);
 }
 
 #field0 {
   grid-column: 1 / 3;
 }
+
 .field {
   background-color: lightgrey;
   border: gray solid 1px;
@@ -33,7 +33,7 @@ main {
 }
 
 p {
-  margin:  0;
+  margin: 0;
 }
 
 .orange {

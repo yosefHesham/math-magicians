@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */ // TODO: upgrade to latest eslint tooling
+/* eslint-disable react/prop-types */ // TODO: upgrade to latest eslint tooling
 
 import React from 'react';
 
@@ -17,11 +18,11 @@ class Field extends React.Component {
   }
 
   render() {
-    const { sign } = this.props;
+    const { sign, handleClick } = this.props;
     const fieldClassNames = `field ${arithmeticSigns.includes(sign) ? 'orange' : ' '} `;
 
     return (
-      <div className={fieldClassNames} id={`field${sign}`}>
+      <div className={fieldClassNames} id={`field${sign}`} onClick={() => handleClick(sign)} onKeyDown={() => null} role="button" tabIndex={0}>
         {sign}
       </div>
     );

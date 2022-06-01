@@ -33,13 +33,23 @@ class Calculator extends React.Component {
     };
   }
 
+  displayNumber = (number) => {
+    if (number === 'AC') {
+      this.setState({ result: '0' });
+    } else {
+      this.setState((previousState) => ({
+        result: previousState.result + number,
+      }));
+    }
+  }
+
   render() {
     const { result } = this.state;
     return (
       <div className="calculator">
 
         <ResultField result={result} />
-        {calc.map((sign) => <Field key={sign} sign={sign} />)}
+        {calc.map((sign) => <Field key={sign} handleClick={this.displayNumber} sign={sign} />)}
 
       </div>
     );
