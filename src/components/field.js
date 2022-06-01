@@ -1,6 +1,3 @@
-/* eslint-disable react/prop-types */ // TODO: upgrade to latest eslint tooling
-/* eslint-disable react/prop-types */ // TODO: upgrade to latest eslint tooling
-
 import React from 'react';
 import PropTypes from 'prop-types';
 
