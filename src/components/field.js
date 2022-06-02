@@ -9,23 +9,16 @@ const arithmeticSigns = [
   'x',
 ];
 
-class Field extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const Field = (props) => {
+  const { sign, handleClick } = props;
+  const fieldClassNames = `field ${arithmeticSigns.includes(sign) ? 'orange' : ' '} `;
 
-  render() {
-    const { sign, handleClick } = this.props;
-    const fieldClassNames = `field ${arithmeticSigns.includes(sign) ? 'orange' : ' '} `;
-
-    return (
-      <div className={fieldClassNames} id={`field${sign}`} onClick={() => handleClick(sign)} onKeyDown={() => null} role="button" tabIndex={0}>
-        {sign}
-      </div>
-    );
-  }
-}
+  return (
+    <div className={fieldClassNames} id={`field${sign}`} onClick={() => handleClick(sign)} onKeyDown={() => null} role="button" tabIndex={0}>
+      {sign}
+    </div>
+  );
+};
 
 Field.propTypes = {
   sign: PropTypes.string,
