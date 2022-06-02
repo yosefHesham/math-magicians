@@ -5,7 +5,7 @@ import React from 'react';
 
 
 const ResultField =  props => {
-    const { result } = this.props;
+    const { result } = props;
     return (
       <p className="result">
         {result}

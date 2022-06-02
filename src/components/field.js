@@ -9,14 +9,9 @@ const arithmeticSigns = [
   'x',
 ];
 
-class Field extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
 
-  render() {
-    const { sign, handleClick } = this.props;
+  const Field = props => {
+    const { sign, handleClick } = props;
     const fieldClassNames = `field ${arithmeticSigns.includes(sign) ? 'orange' : ' '} `;
 
     return (
@@ -25,7 +20,7 @@ class Field extends React.Component {
       </div>
     );
   }
-}
+
 
 Field.propTypes = {
   sign: PropTypes.string,
