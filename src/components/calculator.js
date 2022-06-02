@@ -25,17 +25,18 @@ const calc = [
   '=',
 ];
 
-
-const Calculator = props  => {
-  const [result,setResult] = useState({ total: '0',
-  next: null,
-  operation: null,});
+const Calculator = () => {
+  const [result, setResult] = useState({
+    total: '0',
+    next: null,
+    operation: null,
+  });
   const calculateResult = (sign) => {
     const res = calculate(result, sign);
     setResult(res);
-  }
-  const {total,operation,next} = result;
-  return  (
+  };
+  const { total, operation, next } = result;
+  return (
     <div className="calculator">
 
       <ResultField result={`${total ?? ''}${operation ?? ''}${next ?? ''}`} />
@@ -43,5 +44,5 @@ const Calculator = props  => {
 
     </div>
   );
-}
+};
 export default Calculator;
