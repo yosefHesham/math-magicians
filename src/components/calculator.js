@@ -44,7 +44,7 @@ class Calculator extends React.Component {
     return (
       <div className="calculator">
 
-        <ResultField result={`${total || ''}${operation || ''}${next || ''}`} />
+        <ResultField result={`${total ?? ''}${operation ?? ''}${next ?? ''}`} />
         {calc.map((sign) => <Field key={sign} handleClick={this.calculateResult} sign={sign} />)}
 
       </div>
