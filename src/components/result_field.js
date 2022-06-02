@@ -2,13 +2,9 @@ import PropTypes from 'prop-types';
 
 import React from 'react';
 
-class ResultField extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
 
-  render() {
+
+const ResultField =  props => {
     const { result } = this.props;
     return (
       <p className="result">
@@ -16,7 +12,7 @@ class ResultField extends React.Component {
       </p>
     );
   }
-}
+
 ResultField.propTypes = {
   result: PropTypes.string,
 };
