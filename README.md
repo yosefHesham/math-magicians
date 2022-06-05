@@ -3,7 +3,7 @@
 # Math Magicians
 
 > A website for that contains calculator.
-![](./calc.png)
+![](./calc2.png)
 
 
 ## Built With
