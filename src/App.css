@@ -26,9 +26,7 @@ main {
   justify-content: start;
   margin-left: 5%;
   margin-top: 1%;
-  
 }
-
 
 p {
   margin: 0;
@@ -64,7 +62,6 @@ p {
 }
 
 .home-content {
-  
   word-wrap: break-word;
 }
 
