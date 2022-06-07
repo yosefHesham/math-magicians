@@ -18,6 +18,18 @@ main {
   margin-top: 5%;
 }
 
+.home-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-left: 5%;
+  margin-top: 1%;
+  
+}
+
+
 p {
   margin: 0;
 }
@@ -52,9 +64,8 @@ p {
 }
 
 .home-content {
-  width: 50%;
+  
   word-wrap: break-word;
-  margin: 0 auto;
 }
 
 .navBar {
