@@ -37,11 +37,14 @@ const Calculator = () => {
   };
   const { total, operation, next } = result;
   return (
+    <div className='calc-wrapper'>
+      <p>Lets Do Some Math !</p>
     <div className="calculator">
 
       <ResultField result={`${total ?? ''}${operation ?? ''}${next ?? ''}`} />
       {calc.map((sign) => <Field key={sign} handleClick={calculateResult} sign={sign} />)}
 
+    </div>
     </div>
   );
 };
