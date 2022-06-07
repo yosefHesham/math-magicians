@@ -7,7 +7,7 @@ import RouteHanlder from './components/route_handler';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <RouteHanlder/>
+    <RouteHanlder />
   </React.StrictMode>,
 );
 

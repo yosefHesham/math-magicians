@@ -17,11 +17,16 @@ main {
   justify-content: space-around;
   margin-top: 5%;
 }
-.calc-wrapper p {
 
+p {
+  margin: 0;
+}
+
+.calc-wrapper p {
   font-weight: 600;
   font-size: 22px;
 }
+
 .calculator {
   height: 70vh;
   width: 60%;
@@ -42,40 +47,33 @@ main {
   cursor: pointer;
 }
 
-p {
-  margin: 0;
-}
-
 .orange {
   background-color: orange !important;
 }
 
-
-.home-content  {
+.home-content {
   width: 50%;
   word-wrap: break-word;
   margin: 0 auto;
-
 }
 
 .navBar {
   display: flex;
   justify-content: space-between;
-  
 }
+
 ul {
   display: flex;
   list-style: none;
   column-gap: 5px;
   margin-right: 10px;
 }
+
 h1 {
   margin-left: 1%;
 }
 
 .quote {
-  
-  text-align:  center;
+  text-align: center;
   margin-top: 20%;
-
 }

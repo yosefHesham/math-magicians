@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
-const Quote = () => {
-  return (<div className="quote">
+const Quote = () => (
+  <div className="quote">
     Mathmatics is not about numbers, equations, computations, or algorithms:
     its about understanding. - William Paul Thurston
-  </div>)
-}
+  </div>
+);
 
-export default Quote
+export default Quote;
