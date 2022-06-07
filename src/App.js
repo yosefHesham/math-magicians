@@ -1,11 +1,11 @@
 import React from 'react';
-import Calculator from './components/calculator';
 
 import './App.css';
+import Home from './pages/home';
 
 const App = () => (
   <main>
-    <Calculator />
+   <Home/>
   </main>
 );
 
