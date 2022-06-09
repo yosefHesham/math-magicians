@@ -2,19 +2,16 @@
 
 # Math Magicians
 
-> A website for that contains calculator.
-![](./calc2.png)
+> A website made for people with love with mathmatic, it contains a calculator, and some really nice quotes from great mathmaticians.
+![](./calc.png)
 
 
 ## Built With
 
 - HTML, CSS, ES6.
 - React
-
-## Live Demo (if available)
-
-## Getting Started
-
+- Jest
+- React testing library
 
 
 To get a local copy up and running follow these simple example steps.
