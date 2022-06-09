@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test for navbar inside the router Navbar should render correctly 1`] = `<div />`;
-
-exports[`Test for quote page Navbar should render correctly 1`] = `<div />`;
-
-exports[`Test for quote page Quote page should render correctly 1`] = `<div />`;
+exports[`Test for quote page Quote page should render correctly 1`] = `
+<div
+  className="quote"
+>
+  Mathmatics is not about numbers, equations, computations, or algorithms: its about understanding. - William Paul Thurston
+</div>
+`;

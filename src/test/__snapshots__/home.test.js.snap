@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test for home page Quote page should render correctly 1`] = `
+<div
+  className="home-wrapper"
+>
+  <h2>
+     Welcome to our page !
+  </h2>
+  <p
+    className="home-content"
+  >
+    LoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremI psumLoremIpsumLoremIpsumLoremIpsumLoremIpsu mLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIp sumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumL oremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsum
+  </p>
+</div>
+`;
