@@ -29,10 +29,10 @@ export default function calculate(obj, buttonName) {
     // If there is an operation, update next
     if (obj.operation) {
       if (obj.next && obj.next !== '0') {
-        console.log('WTF1');
+        
         return { ...obj, next: obj.next + buttonName };
       }
-      console.log('WTF2');
+      
 
       return { ...obj, next: buttonName };
     }
@@ -51,7 +51,7 @@ export default function calculate(obj, buttonName) {
   }
 
   if (buttonName === '.') {
-    console.log('WTF5');
+    
 
     if (obj.next) {
       if (obj.next.includes('.')) {
