@@ -29,16 +29,15 @@ export default function calculate(obj, buttonName) {
     // If there is an operation, update next
     if (obj.operation) {
       if (obj.next && obj.next !== '0') {
-        console.log("WTF1")
+        console.log('WTF1');
         return { ...obj, next: obj.next + buttonName };
       }
-      console.log("WTF2")
+      console.log('WTF2');
 
       return { ...obj, next: buttonName };
     }
     // If there is no operation, update next and clear the value
     if (obj.next && obj.next !== '0') {
-
       return {
         next: obj.next + buttonName,
         total: null,
@@ -52,7 +51,7 @@ export default function calculate(obj, buttonName) {
   }
 
   if (buttonName === '.') {
-    console.log("WTF5")
+    console.log('WTF5');
 
     if (obj.next) {
       if (obj.next.includes('.')) {

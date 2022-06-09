@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Test for quote page Quote page should render correctly 1`] = `
-<div
-  className="quote"
->
-  Mathmatics is not about numbers, equations, computations, or algorithms: its about understanding. - William Paul Thurston
-</div>
-`;
