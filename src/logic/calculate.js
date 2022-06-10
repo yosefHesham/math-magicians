@@ -29,10 +29,8 @@ export default function calculate(obj, buttonName) {
     // If there is an operation, update next
     if (obj.operation) {
       if (obj.next && obj.next !== '0') {
-        
         return { ...obj, next: obj.next + buttonName };
       }
-      
 
       return { ...obj, next: buttonName };
     }
@@ -51,8 +49,6 @@ export default function calculate(obj, buttonName) {
   }
 
   if (buttonName === '.') {
-    
-
     if (obj.next) {
       if (obj.next.includes('.')) {
         return { ...obj };
