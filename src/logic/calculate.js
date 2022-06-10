@@ -31,6 +31,7 @@ export default function calculate(obj, buttonName) {
       if (obj.next && obj.next !== '0') {
         return { ...obj, next: obj.next + buttonName };
       }
+
       return { ...obj, next: buttonName };
     }
     // If there is no operation, update next and clear the value
@@ -40,6 +41,7 @@ export default function calculate(obj, buttonName) {
         total: null,
       };
     }
+
     return {
       next: buttonName,
       total: null,
